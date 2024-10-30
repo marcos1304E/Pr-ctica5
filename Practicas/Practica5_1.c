@@ -3,7 +3,7 @@
 
 int main(){
 
-	float promedio = 0, maxima, minima = 0;
+	float promedio = 0, maxima, minima;
 	int contador;
 	float temp_semana[7];
 	char Dias_semana[7][11] = {
