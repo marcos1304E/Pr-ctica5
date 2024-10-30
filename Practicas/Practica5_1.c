@@ -37,9 +37,10 @@ int main(){
 			minima = temp_semana[contador];
 		}
 	}
-	printf("La temperatura máxima es: %2.f\n", maxima);
-	printf("La temperatura mínima es : %.2f\n", minima);
 
-
+	
+	  printf("La temperatura máxima es: %2.f\n", maxima);
+	  printf("La temperatura mínima es : %.2f\n", minima);
 	return EXIT_SUCCESS;
-}
+
+		}
