@@ -89,7 +89,9 @@ int main(){
 	  // los valores de temp_semana, y si se cumple la condición, 
 	  // imprimira el valor que sea mayor a el promedio y 
 	  // dia_maxima volvera a guardar el valor de contador, para imprimir
-	  // el dia de la semana. 
+	  // el dia de la semana.
+	  
+	 
 		}
 	}
 	return EXIT_SUCCESS;
