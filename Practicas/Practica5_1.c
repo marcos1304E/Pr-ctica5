@@ -101,6 +101,8 @@ int main(){
 			printf("El día %s tiene una temperatura menor a la media con una temperatura de %.2f grados\n", Dias_semana[dia_minima], temp_semana[contador]);
 		}
 	}
+	//* Hacemos lo mismo para determinar que dias son los que tienen una temperatura inferior a la 
+	//minima. lo unico que cambiando el signo de la condición y asignando el valor de contador a dia_minima.
 
 	return EXIT_SUCCESS;
 }
