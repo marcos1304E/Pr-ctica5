@@ -94,6 +94,14 @@ int main(){
 	 
 		}
 	}
+
+	for(contador = 0; contador <= 6; contador++){
+		if (temp_semana[contador] < promedio){
+			dia_minima = contador;
+			printf("El día %s tiene una temperatura menor a la media con una temperatura de %.2f grados\n", Dias_semana[dia_minima], temp_semana[contador]);
+		}
+	}
+
 	return EXIT_SUCCESS;
 }
 
