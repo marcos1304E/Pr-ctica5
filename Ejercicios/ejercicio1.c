@@ -1,12 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
+	
 
 
-	int inventario[continente][sede][categaria][modelo][lote]={0};
+	int main(){
 
-	int main();
+	int inventario[2][3][4][5][10]={0};
+	
 
-	inventario[0]0[0][0][0][0] = 50;
+
+	inventario[0][0][0][0][0] = 50;
 
 	inventario[1][1][1][3][2] = 120;
 
@@ -24,4 +27,5 @@ printf("Inventario en america sede 5,categoria telefonos,modelo 6,lote 5; %d uni
 
 return 0;
 
-º
+}
+
