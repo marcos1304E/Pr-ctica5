@@ -19,7 +19,7 @@ int main(){
 	struct Productos Informatica[cantidad_productos];
 	for(i = 0; i < cantidad_productos; i++){
 		printf("Producto %d\n", i + 1);
-		
+
 		printf("Nombre: ");
 		scanf(" %s", Informatica[i].nombre);
 
@@ -29,20 +29,28 @@ int main(){
 
 	printf("Inventario completo: \n");
 	for (i = 0; i < cantidad_productos; i++){
-	printf("Producto %d: %s - %d unidades\n", i + 1, Informatica[i].nombre, Informatica[i].cantidad_stock);
+		printf("Producto %d: %s - %d unidades\n", i + 1, Informatica[i].nombre, Informatica[i].cantidad_stock);
 	}
-	printf("Si desdea reabastecer algún producto, pulse 1, si no pulse 2.\n");
-		scanf(" %d", &reabastecer);
+	
+	if (reabastecer < 1 || reabastecer > 2){
+		printf("El valor introducido no es valido.\n");
+	
+	}
+	for(i = 0; i < cantidad_productos; i++){
 
-		if (reabastecer < 1 || reabastecer > 2){
-			printf("El valor introducido no es valido.\n");
-			return 1;
-		}
-		if (reabastecer = 1){
-			printf("¿Que producto quiere reabastecer?\n");
-		
-			
+	printf("Si desea reabastecer algún producto, pulse 1, si no pulse 2.\n");
+	scanf(" %d", &reabastecer);	
+	if (reabastecer = 1){
+		printf("¿Que producto quiere reabastecer?\n");
+		scanf("%s", Informatica[i].nombre);
+		printf("¿Que cantidad?\n");
+		scanf(" %d", &Informatica[i].cantidad_stock);
+	}
+		if (reabastecer = 2){
+			printf("Perfecto");	
+		}	
+	
 		return 0;
-}}
-		
+	}}
+
 
